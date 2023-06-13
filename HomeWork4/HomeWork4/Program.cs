@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Pleas write number...");
+﻿Console.WriteLine("Please write number...");
 int number = int.Parse(Console.ReadLine());
 
 string notprimenumber = (number + " is NOT a prime number");
