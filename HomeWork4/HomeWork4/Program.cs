@@ -1,12 +1,12 @@
 ﻿Console.WriteLine("Please write number...");
 int number = int.Parse(Console.ReadLine());
 
-string notprimenumber = (number + " is NOT a prime number");
+string notPrimenumber = (number + " is NOT a prime number");
 string primenumber = (number + " is a prime number");
 
 if (number < 2)
 {
-    Console.WriteLine(notprimenumber);
+    Console.WriteLine(notPrimenumber);
 }
 else if (number == 2)
 {
@@ -14,7 +14,7 @@ else if (number == 2)
 }
 else if (number % 2 == 0)
 {
-    Console.WriteLine(notprimenumber);
+    Console.WriteLine(notPrimenumber);
 
 }
 else
@@ -26,7 +26,7 @@ else
         if (number % divisor == 0)
         {
             Prime = false;
-            Console.WriteLine(notprimenumber);
+            Console.WriteLine(notPrimenumber);
             break;
         }
         divisor += 2;
