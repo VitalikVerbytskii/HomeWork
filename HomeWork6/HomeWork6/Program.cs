@@ -47,7 +47,7 @@ while (indexNumber > i)
    if (indexNumber == i)
     {
   firstNumber--;
-  Console.WriteLine(firstNumber);
+        Console.WriteLine("Prime number is " + firstNumber);
     }
 }
 
