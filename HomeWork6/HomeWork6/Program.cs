@@ -2,7 +2,7 @@
 
  int indexNumber = int.Parse(Console.ReadLine()); 
 
-int firstNumber = 1; 
+int firstNumber = 2; 
 
 int i = 0;
 
@@ -10,11 +10,12 @@ while (indexNumber > i)
 {
    
 
-     if (indexNumber == 2)
+     if (firstNumber == 2)
     {
         //primeNumber
-        Console.WriteLine(firstNumber);
-    }
+        i++;
+        firstNumber++;
+     }
     else if (firstNumber % 2 == 0)
     {
       firstNumber++;
