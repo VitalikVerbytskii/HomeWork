@@ -4,7 +4,7 @@ using System.Diagnostics;
 public class SortAlgorithm
 {
     // без 
-    public static void InsertionSort(int[] array)
+    public static void InsertionSortWithout(int[] array)
     {
         int n = array.Length;
         for (int i = 1; i < n; i++)
@@ -19,7 +19,7 @@ public class SortAlgorithm
             array[j + 1] = key;
         }
     }
-    public static void InsertionSort<T>(T[] array) where T : IComparable<T>
+    public static void InsertionSortWith<T>(T[] array) where T : IComparable<T>
     {
         int n = array.Length;
         for (int i = 1; i < n; i++)
@@ -36,17 +36,37 @@ public class SortAlgorithm
     }
         static void Main(string[] args)
     {
-        int[] array = { 5, 2, 4, 6, 1, 3 };
+        
+        while (true) {
+        Console.WriteLine("Please write 5 numbers in array: ");
+        Console.WriteLine();
+        
+        int[] array = new int[5];
+            
+            
+
+            for (int i = 0; i < 5; i++)
+        {
+            array[i] = int.Parse(Console.ReadLine());
+        }
 
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
-        InsertionSort(array);
+        InsertionSortWithout(array);
         stopwatch.Stop();
-
         TimeSpan elapsedTime = stopwatch.Elapsed;
-        Console.WriteLine("Час виконання: " + elapsedTime);
+        Console.WriteLine("Runtime without using generic types: " + elapsedTime);
+        Console.WriteLine();
 
-        Console.ReadLine();
+        
+        stopwatch.Start();
+        InsertionSortWith(array);
+        stopwatch.Stop();
+        TimeSpan elapsedTim2 = stopwatch.Elapsed;
+        Console.WriteLine("Runtime with using generic types:: " + elapsedTim2);
+
+        
+        }
     }
 }
 
