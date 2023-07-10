@@ -1,4 +1,4 @@
-﻿using System;
+﻿namespace HomeWork12 { 
 using System.Diagnostics;
 
 public class SortAlgorithm
@@ -70,3 +70,4 @@ public class SortAlgorithm
     }
 }
 
+}
