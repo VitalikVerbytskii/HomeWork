@@ -7,8 +7,8 @@ public interface IRadio
     void TurnOff();
     void IncreaseVolume();
     void ReduceVolume();
-    public abstract void VolumeM();
-    public abstract void VolumeP();
+    void VolumeM();
+    void VolumeP();
 }
 
 
